@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>amazon LOG IN</title>
+</head>
+<body>
+    <!-- log in form -->
+    <div class="container">
+        <div class="d-flex justify-content-center my-3">
+            <img src="./images/logo.png" width="110px" alt="">
+        </div>
+        <div class="row w-100 px-3 m-0">
+            <!-- form to sign email or number -->
+            <form class="col-lg-4 col-md-6 col-sm-8 offset-lg-4 offset-md-3 offset-sm-2 rounded border border-secondery p-4 form-cont-log">
+                <h3 class="">sing in</h3>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label m-0 fw-bold fs-7">Email or mobile phone number</label>
+                    <input type="email" class="form-control mt-1" id="lg-userName" aria-describedby="emailHelp">
+                </div>
+                <button type="button" class="btn btn-warning w-100 fs-7" id="lg-login">Continue</button>
+                <div id="emailHelp" class="text-black fs-8 my-3 lh-sm">By signing in, you agree to Amazon's Conditions of Use and Privacy Notice.</div>
+                <span class="fw-bold fs-8 text-dark mx-1">></span><a href="#" class="link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-8">Need help</a>
+            </form>
+        </div>
+
+        <div class="row w-100 px-3 m-0">
+            <div class="mail-btn-foot col-lg-4 text-center col-md-6 col-sm-8 offset-lg-4 offset-md-3 offset-sm-2 py-3 px-0 new-acc-btn">
+                <div class="w-100 my-3" style="position: relative;">
+                    <h3 class=" new-txt">New to Amazon?</h3>
+                </div>
+                <button type="button" class="btn btn-light w-100 border border-secondery fs-8" id="create-new-account">Create your Amazon account</button>
+            </div> 
+
+            <div class="footer-log">
+                <div class="d-flex justify-content-center">
+                    <div class="list-group list-group-horizontal">
+                        <a href="#" class="fs-8 m-3">Conditions of Use</a>
+                        <a href="#" class="fs-8 m-3">Privacy Notice</a>
+                        <a href="#" class="fs-8 m-3">Help</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="fs-8">&copy;1996-2023, Amazon.com, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/log-in-name.js"></script>
+</body>
+</html>

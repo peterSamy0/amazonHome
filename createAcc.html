@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Amazon Registrarion</title>
+</head>
+<body>
+    <!-- log in form -->
+    <div class="container">
+        <div class="d-flex justify-content-center my-3">
+            <img src="./images/logo.png" width="110px" alt="">
+        </div>
+        <div class="row w-100 px-3 m-0">
+            <!-- form to sign email or number -->
+            <form class="col-lg-4 col-md-6 col-sm-8 offset-lg-4 offset-md-3 offset-sm-2 rounded border border-secondery p-4 form-cont-log pb-0">
+                <h3 class="fs-6 fw-bold">Create account</h3>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label m-0 fw-bold fs-8">Your name</label>
+                    <input type="text" class="form-control mt-1 fs-8" autocomplete="" id="newUserName" aria-describedby="emailHelp">
+                    <p id="cr-error-name" class=" text-danger fs-8 mt-1 fw-medium disp-none">
+                        Enter your name
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label m-0 fw-bold fs-8">Mobile number or email</label>
+                    <input type="number" class="form-control mt-1 fs-8" autocomplete="" id="cr-phone" aria-describedby="emailHelp">
+                    <p id="cr-error-phone" class=" text-danger fs-8 mt-1 fw-medium disp-none">
+                        Enter your email or mobile phone number
+                    </p>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label m-0 fw-bold fs-8">Password</label>
+                    <input type="password" class="form-control mt-1 fs-8" id="cr-password" aria-describedby="emailHelp" placeholder="at least 6 characters.">
+                    <p id="cr-error-pass" class=" text-danger fs-8 mt-1 fw-medium disp-none"> 
+                        Minimum 6 characters required
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label m-0 fw-bold fs-8" >Re-enter password</label>
+                    <input type="password" class="form-control mt-1 fs-8" autocomplete="" id="cr-confirm-password" aria-describedby="emailHelp">
+                    <p id="cr-error-re-pass" class=" text-danger fs-8 mt-1 fw-medium disp-none">     
+                        Type your password again
+                    </p>
+                </div>
+                <button type="button" class="btn btn-warning w-100 fs-7" id="cr-btn-signUp">Continue</button>
+                <div id="emailHelp" class="text-black fs-8 my-4 lh-sm">By signing in, you agree to Amazon's <a href="#"> Conditions of Use</a> and <a href="#">Privacy Notice</a>.</div>
+                <hr>
+                <div class="pb-2 mt-4">
+                    <p class="fs-9 mb-0 py-2" >Already have an account? <a href="#"> Sign in</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="row w-100 px-3 m-3">
+            <div class="footer-log">
+                <div class="d-flex justify-content-center">
+                    <div class="list-group list-group-horizontal">
+                        <a href="#" class="fs-10 m-2">Conditions of Use</a>
+                        <a href="#" class="fs-10 m-2">Privacy Notice</a>
+                        <a href="#" class="fs-10 m-2">Help</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="fs-10">&copy;1996-2023, Amazon.com, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>HOME</title>
+</head>
+<body class="index">
+  <!-- d-none d-lg-block -->
+
+  <!-- hidden all window  -->
+  <div class="position-relative hidden-all col-md-9">
+      <!-- close window sign (x)-->
+      <div class="w-3 position-absolute justify-content-end bg-info close-icon disp-none right-rt" style="height: 50px;">
+        <div class="position-relative" style="height: 50px; width: 50px;">
+          <i id="closeAll" class="fa-solid fa-xmark position-absolute p-2 cursor text-white fs-2 pt-3"></i>
+        </div>
+      </div>
+      <!-- content of list  -->
+      <div class="position-fixed widow-left bg-white hidden">
+        <div class="d-flex flex-column">
+
+          <h3 class="bg-primary-subtle text-white fw-bold fs-6 w-100 p-3">Hello, <span class="accountName">Peter</span></h3>
+          <!-- Trending list -->
+          <ul class="d-flex flex-column justify-content-center mb-0 p-1px all-ul disp-none">
+            <h3 class="fs-6 fw-bolder my-3 ps-4  ">Trending</h3>
+            <a href="#" class="all-li-pro text-dark py-2 ps-4 fs-9">Best Sellers</a>
+            <a href="#" class="all-li-pro text-dark py-2 ps-4 fs-9">New Releases</a>
+            <a href="#" class="all-li-pro text-dark pt-2 ps-4 fs-9">Movers & Shakers</a>
+          </ul>
+          <hr class="w-100">
+          
+          <!-- digital content and devices list -->
+          <ul class="d-flex flex-column justify-content-center mb-0 p-1px all-ul disp-none">
+            <h3 class="fs-6 fw-bolder my-3 ps-4  ">Digital Content And Devices</h3>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between">Amazon Kindle E-readers <i class="fa-solid fa-chevron-right"></i> </a>
+          </ul>
+        <hr class="w-100">
+
+          <!-- Shop By Category list -->
+          <ul class="d-flex flex-column justify-content-center mb-0 p-1px all-ul disp-none">
+            <h3 class="fs-6 fw-bolder my-3 ps-4  ">Shop By Category</h3>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between">Mobiles, Tablets & Accessories <i class="fa-solid fa-chevron-right"></i> </a>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between">Computers & Office Supplies <i class="fa-solid fa-chevron-right"></i> </a>
+            <a href="#" class="all-li-pro text-dark pt-2 px-4 fs-9 d-flex justify-content-between">TVs & Electronics <i class="fa-solid fa-chevron-right"></i> </a>
+            <a href="#" class="all-li-pro text-dark pt-2 px-4 fs-9 d-flex justify-content-between">Women's Fashion <i class="fa-solid fa-chevron-right"></i> </a>
+          </ul>
+          <hr class="w-100">
+
+          <!-- digital content and devices list -->
+          <ul class="d-flex flex-column justify-content-center mb-0 p-1px all-ul disp-none">
+            <h3 class="fs-6 fw-bolder my-3 ps-4  ">Programs & Features</h3>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between">Today's Deals</a>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between">Amazon Outlet</a>
+          </ul>
+          <hr class="w-100">
+
+          <!-- digital content and devices list -->
+          <ul class="d-flex flex-column justify-content-center mb-0 p-1px all-ul disp-none">
+            <h3 class="fs-6 fw-bolder my-3 ps-4  ">Help & Settings</h3>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between">Your Account</a>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9"> <i class="fa-solid fa-globe pe-3"></i>English</a>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9"><img src="./images/egy-flag.png" width="20px" alt="" class="me-2">Egypt</a>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between"> Help</a>
+            <a href="#" class="all-li-pro text-dark py-2 px-4 fs-9 d-flex justify-content-between sign-out">Sign Out</a>
+          </ul>
+        </div>
+      </div>
+      <!-- dark window open when click on all button -->
+      <div class="op-dark-slide position-fixed disp-none"></div>
+  </div>
+
+  <!-- navBar -->
+  <div>
+    <nav class="navbar navbar-expand-lg p-0 bg-dark flex-grow-1">
+      <div class="d-flex justify-content-between container-fluid p-0">
+        <!-- all icon hidden in large screen -->
+       <div class="d-flex justify-content-start align-items-center">
+          <a href="#" class="text-light link-nav-style fs-6 ms-2 item-brd p-2 fw-bold d-flex d-lg-none" id="all-btn-cat">
+            <i class="fa-solid fa-bars mx-2 mt-1"></i>
+            All
+          </a>
+          <!-- amazon Logo -->
+          <a class="navbar-brand item-brd bg-nav" href="#">
+            <img src="./images/logoo-1.jpg" width="100px" alt="" class="bg-nav">
+          </a>
+       </div>
+
+        <div class="item-brd text-light cursor bg-transparent mx-2 p-2 d-flex flex-column justify-content-center d-none d-lg-block">
+              <span class="mx-1 text-end fs-8">Deliver to:</span>
+              <span class="d-block transform-Div text-start fs-8"><i class="fa-solid fa-location-dot mx-1"></i>egypt</span>
+        </div>
+
+        <!-- search form  -->
+        <div class="d-none d-lg-block flex-grow-1">
+          <form class="d-flex  pe-5" role="search" >
+            <li class="nav-item dropdown all-cat rounded-start">
+                <a class="nav-link p-2 dropdown-toggle fs-8 text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All
+                </a>
+                <ul class="dropdown-menu py-2">
+                  <li class="cat-li-link px-1 fs-8"><a class="cat-link" href="#">Action</a></li>
+                  <li class="cat-li-link px-1 fs-8"><a class="cat-link" href="#">Another action</a></li>
+                  <li class="cat-li-link px-1 fs-8"><a class="cat-link" href="#">Something else here</a></li>
+                </ul>
+              </li>
+          <input class="form-control rounded-0 fs-7" type="search" placeholder="Search amazon eg" aria-label="Search">
+          <button class="btn bg-orange rounded-end-css border-none" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          </form>
+        </div>
+
+        <!-- language selection on navBar -->
+        <div class="m-2 ms-4  pb-0 item-brd p-2 cursor position-relative list-lang-nav d-none d-lg-block">
+          <img src="./images/egy-flag.png" width="20px" alt="">
+          <span class="fs-8 text-light fw-bold">EN </span>
+          <sub>
+          <i class="fa-solid fa-caret-down text-light fs-8"></i>
+          </sub>
+
+          <!-- hidden list of language appear when click or hover -->
+          <ul class="position-absolute all-cat p-3 ul-lang-nav disp-none fs-8">
+            <div class="position-relative">
+              <div class="triangle-up position-absolute"></div>
+            </div>
+            <li class="text-start text-dark my-2">
+              <input type="radio" name="language" value="arabic"> <label for="arabic" class="pe-5">العربية - AR</label>
+            </li>
+            <hr>
+            <li class="text-start text-dark my-2">
+              <input type="radio" name="language" value="English"> <label for="English" class="pe-5">english - EN</label>
+            </li>
+            <li class="text-start all-cat my-2">
+              <a href="#">Learn more</a>
+            </li>
+            <hr>
+            <div class="text-start text-dark pe-5">
+              <img src="./images/egy-flag.png" width="20px" alt="">
+              <span>You are shopping on <br> Amazon.eg</span>
+            </div>
+            <div>
+              <a href="#" class="pt-2 text-center d-block w-100">Change Country/Region</a>
+            </div>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-end align-items-center">
+          <!-- account information and it's list -->
+          <div class="me-2 p-2 item-brd cursor position-relative acc-div-info">
+            <div class="text-light fs-8">
+              <p class="m-0">Hello, <span class="accountName"></span></p>
+            </div>
+            <div class="text-light fs-8 fw-bold cursor">
+              Account & Lists
+              <sub>
+                <i class="fa-solid fa-caret-down text-light fs-8"></i>
+              </sub>
+            </div>
+
+            <!-- hidden list of account information and it's list -->
+            <ul class="position-absolute all-cat p-3 ul-account-nav fs-8 disp-none">
+              <div class="triangle-up-acc position-absolute"></div>
+              <div class="d-flex">
+                <ul class="w-75 border-end p-3">
+                  <h3 class="fs-9 text-dark fw-bolder my-0">Your Lists</h3>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Create a List</a>
+                </ul>
+                <ul class="p-3 d-flex flex-column">
+                  <h3 class="fs-9 text-dark fw-bolder my-0">Your Account</h3>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Account</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Orders</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Addresses</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Lists</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Keep shopping for</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Recommendations</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Prime Membership</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Memberships & Subscriptions</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Your Seller Account</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover">Switch Accounts</a>
+                  <a href="#" class="text-secondary link-nav-style fs-9 fw-bold link-sec-hover sign-out">Sign Out</a>
+                </ul>
+              </div>
+            </ul>
+          </div>
+          <!-- orders -->
+          <div class="me-2 p-2  item-brd cursor d-none d-lg-block">
+            <p  class="text-light fs-7 mb-0 mt-3 fw-bold">Orders</p>
+          </div>
+          <!-- cart -->
+          <div class="text-light item-brd p-2 pb-0 cursor">
+            <i class="fa-solid fa-cart-arrow-down fw-bold fs-3"></i>
+            <sub class="fw-bold fs-7">Cart</sub>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex-grow-1 m-auto bg-dark d-block d-lg-none">
+      <form class="d-flex" role="search" >
+        <li class="nav-item dropdown all-cat rounded-start">
+            <a class="nav-link p-2 dropdown-toggle fs-8 text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All
+            </a>
+            <ul class="dropdown-menu py-2">
+              <li class="cat-li-link px-1 fs-8"><a class="cat-link" href="#">Action</a></li>
+              <li class="cat-li-link px-1 fs-8"><a class="cat-link" href="#">Another action</a></li>
+              <li class="cat-li-link px-1 fs-8"><a class="cat-link" href="#">Something else here</a></li>
+            </ul>
+          </li>
+      <input class="form-control rounded-0 fs-7" type="search" placeholder="Search amazon eg" aria-label="Search">
+      <button class="btn bg-orange rounded-end-css border-none" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      </form>
+    </div>
+  </div>  
+
+   <!-- nav Category -->
+   <div class="d-flex justify-content-between bg-sec-nav overflow-scroll">
+      <div class="d-flex justify-content-between w-100">
+        <ul class="d-flex .all-cat justify-content-center mb-0 p-1px">
+          <a href="#" class="text-light link-nav-style fs-6 ms-2 item-brd p-2 fw-bold d-flex d-none d-lg-flex" id="all-btn-cat-2">
+            <i class="fa-solid fa-bars mx-2 mt-1"></i>
+            All
+          </a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">P's amazon eg</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Perfumes</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Home</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Toy & Games</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Electronics</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Help</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Prime</a>
+          <a href="#" class="text-light link-nav-style fs-7 ms-2 item-brd p-2 fw-bold text-nowrap">Mobile Phones</a>
+        </ul>
+        <div class="cursor d-none d-lg-block">
+          <img src="./images/adv.jpg" height="100%">
+        </div>
+      </div>
+   </div>
+
+  <!-- slider -->
+  <div class="container-fluid w-100 p-0 m-0 position-relative d-none d-lg-block">
+    <div class="op-dark-slide-nav position-absolute disp-none"></div>
+    <div class="w-100 op-div"></div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/slider-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-6.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-7.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev align-items-start m-10" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next align-items-start m-10" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  
+
+  <!-- cards -->
+  <div class="mt-270 card-Div position-relative">
+    <div class="container-fluid w-96 my-3 mx-auto ">
+      <div class="row gap-3 justify-content-center">
+        <!-- card-1 -->
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Footwear | Below 299 EGP</h5>
+          <div class="d-flex flex-wrap py-0 px-1">
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#">
+                <img src="./images/shoes-1.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#">
+                <img src="./images/shoes-2.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#">
+                <img src="./images/shoes-3.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#">
+                <img src="./images/shoes-4.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+          </div>
+          <div class="card-body pt-2 pb-2 mt-5">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">see more</a>
+          </div>
+        </div>
+
+        <!-- card-2 -->
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+          <img src="./images/wallet.jpg" class="card-img w-100 align-self-center h-250" alt="...">
+          <div class="card-body pb-1">
+            <p class="card-text m-0 fs-7">New Arrivals in Wallets</p>
+            <p class="card-text fs-8 m-0 text-secondary">1 viewed</p>
+          </div>
+          <div class="card-body pt-0 pb-2">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">Shop all Wallet</a>
+          </div>
+        </div>
+
+        <!-- card-3 -->
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+          <img src="./images/makeUp.jpg" class="card-img w-100 align-self-center h-250" alt="...">
+          <div class="card-body pb-1">
+            <p class="card-text m-0 fs-7">Makeup | New arrivals</p>
+            <p class="card-text fs-8 m-0 text-secondary">1 viewed</p>
+          </div>
+          <div class="card-body pt-0 pb-2">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- card-24-->
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+          <img src="./images/tools.jpg" class="card-img w-100 align-self-center h-250 mb-1" alt="...">
+          <div class="card-body pt-0 pb-2 mt-5">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">see more</a>
+          </div>
+        </div>
+
+        <!-- card-5 -->   
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">wrist Watchs</h5>
+          <div class="d-flex flex-wrap py-0 px-1">
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#">
+                <img src="./images/watch-1.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's Watchs</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#">
+                <img src="./images/watch-2.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's Watchs</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0 mt-4">
+              <a href="#">
+                <img src="./images/watch-3.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's Watchs</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0 mt-4">
+              <a href="#">
+                <img src="./images/watch-4.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Watchs</p>
+            </div>
+          </div>
+          <div class="card-body pt-2 pb-2 mt-4">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">see more</a>
+          </div>
+        </div>
+        <!-- card-6 -->   
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Security cameras | Starting 250 EGP</h5>
+          <img src="./images/cam.jpg" class="card-img w-100 align-self-center h-250 mb-1" alt="...">
+          <!-- -->
+          <div class="card-body pt-0 pb-2 mt-4">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style pt-3">See More</a>
+          </div>
+        </div>
+
+        <!-- card-7 -->
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Footwear | Below 299 EGP</h5>
+          <div class="d-flex flex-wrap py-0 px-1">
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#" class="d-flex justify-content-center">
+                <img src="./images/elec-1.jpg" class="card-img w-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#" class="d-flex justify-content-center">
+                <img src="./images/elec-2.jpg" class="card-img w-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#" class="d-flex justify-content-center">
+                <img src="./images/elec-3.jpg" class="card-img w-100 p-2 h-110" alt="...">
+              </a>
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+            <div class="align-self-center w-50 h-125 p-0">
+              <a href="#"  class="d-flex justify-content-center">
+                <img src="./images/elec-4.jpg" class="card-img w-100 p-2 h-110" alt="...">
+              </a> 
+              <p class="fs-10 px-2 m-0">Men's club</p>
+            </div>
+          </div>
+          <div class="card-body pt-2 pb-2 mt-5">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">see more</a>
+          </div>
+        </div>
+
+        <!-- card-8 -->
+        <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+          <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+          <img src="./images/baby.jpg" class="card-img w-100 align-self-center h-250" alt="...">
+          <div class="card-body pb-1">
+            <p class="card-text m-0 fs-7">Everything for your baby</p>
+            <p class="card-text fs-8 m-0 text-secondary">1 viewed</p>
+          </div>
+          <div class="card-body pt-0 pb-2">
+            <a href="#" class="link-danger-hover fs-8 link-nav-style">Shop Now</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <!-- sections -->
+  <div>
+    <!-- clothes section -->
+    <div class="bg-white w-96 m-auto p-1 my-5">
+      <div class="bg-white p-1 w-96 mx-auto my-2">
+        <h3 class="fs-5 fw-bold">
+          <span id="clothes-sec"></span> <a href="#" class="fw-normal fs-7 link-danger-hover link-nav-style">see more Deals</a>
+        </h3>
+      </div>
+      <div class="carousel-container mt-0">
+        <div class="inner-carousel">
+          <div class="track">
+          </div>
+          <div class="nav">
+          <button class="prev hide"><i class="fa-solid fa-angle-left fs-4 text-secondary"></i></button>
+          <button class="next"><i class="fa-solid fa-angle-right fs-4 text-secondary"></i></button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards of section-->
+    <div class="row gap-3 justify-content-center w-100">
+      <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+        <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Footwear | Below 299 EGP</h5>
+        <div class="d-flex flex-wrap py-0 px-1">
+          <div class="align-self-center w-50 h-125 p-0">
+            <a href="#">
+              <img src="./images/shoes-1.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+            </a>
+            <p class="fs-10 px-2 m-0">Men's club</p>
+          </div>
+          <div class="align-self-center w-50 h-125 p-0">
+            <a href="#">
+              <img src="./images/shoes-2.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+            </a>
+            <p class="fs-10 px-2 m-0">Men's club</p>
+          </div>
+          <div class="align-self-center w-50 h-125 p-0">
+            <a href="#">
+              <img src="./images/shoes-3.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+            </a>
+            <p class="fs-10 px-2 m-0">Men's club</p>
+          </div>
+          <div class="align-self-center w-50 h-125 p-0">
+            <a href="#">
+              <img src="./images/shoes-4.jpg" class="card-imgw-100 p-2 h-110" alt="...">
+            </a>
+            <p class="fs-10 px-2 m-0">Men's club</p>
+          </div>
+        </div>
+        <div class="card-body pt-2 pb-2 mt-5">
+          <a href="#" class="link-danger-hover fs-8 link-nav-style">see more</a>
+        </div>
+      </div>
+    
+      <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+        <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+        <img src="./images/wallet.jpg" class="card-img w-100 align-self-center h-250" alt="...">
+        <div class="card-body pb-1">
+          <p class="card-text m-0 fs-7">New Arrivals in Wallets</p>
+          <p class="card-text fs-8 m-0 text-secondary">1 viewed</p>
+        </div>
+        <div class="card-body pt-0 pb-2">
+          <a href="#" class="link-danger-hover fs-8 link-nav-style">Shop all Wallet</a>
+        </div>
+      </div>
+
+      <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+        <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+        <img src="./images/wallet.jpg" class="card-img w-100 align-self-center h-250" alt="...">
+        <div class="card-body pb-1">
+          <p class="card-text m-0 fs-7">New Arrivals in Wallets</p>
+          <p class="card-text fs-8 m-0 text-secondary">1 viewed</p>
+        </div>
+        <div class="card-body pt-0 pb-2">
+          <a href="#" class="link-danger-hover fs-8 link-nav-style">Shop all Wallet</a>
+        </div>
+      </div>
+
+      <div class="card p-1 col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-8 offset-sm-2" style="width: 18rem;">
+        <h5 class="card-title w-100 fw-bold fs-5 mb-2 p-2 text-start">Keep shopping for</h5>
+        <img src="./images/makeUp.jpg" class="card-img w-100 align-self-center h-250" alt="...">
+        <div class="card-body pb-1">
+          <p class="card-text m-0 fs-7">Makeup | New arrivals</p>
+          <p class="card-text fs-8 m-0 text-secondary">1 viewed</p>
+        </div>
+        <div class="card-body pt-0 pb-2">
+          <a href="#" class="link-danger-hover fs-8 link-nav-style">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- shoes section -->
+    <div class="bg-white w-96 m-auto p-1 my-5">
+      <div class="bg-white p-1 w-96 mx-auto my-2">
+        <h3 class="fs-5 fw-bold">
+          <span id="shoes-sec"></span> <a href="#" class="fw-normal fs-7 link-danger-hover link-nav-style">see more Shoes</a>
+        </h3>
+      </div>
+      <div class="carousel-container-1 mt-0 mb-1">
+        <div class="inner-carousel-1">
+          <div class="track-1">
+          </div>
+          <div class="nav">
+          <button class="prev-1 hide"><i class="fa-solid fa-angle-left fs-4 text-secondary"></i></button>
+          <button class="next-1"><i class="fa-solid fa-angle-right fs-4 text-secondary"></i></button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="container-fluid bg-sec-nav mt-5 p-0">
+    <!-- back to top -->
+    <div class="w-100 text-center cursor bck-hover" id="back-top">
+      <p class="text-light p-3 fs-9 m-0">Back to top<i class="fa-solid fa-angle-up m-1"></i></p>
+    </div>
+
+    <!-- top part of footer which have links -->
+    <div class="w-100 bg-rd-nav p-2 d-lg-block d-none">
+      <div class="row w-7 m-auto my-5">
+        <ul class="h-100 col-lg-3 col-md-4 col-sm-8 offset-lg-0 offset-md-2 offset-sm-2 d-flex flex-column  justify-content-center bg-transparent mb-0 p-1px">
+          <h3 class="fs-6 text-light fw-bolder my-3">Get to Know Us</h3>
+          <a href="#" class="text-sec-enhasis mb-2 link-nav-style fs-8 fw-bold link-sec-hover">About amazon</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Careers</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Amazon Science</a>
+        </ul>
+
+        <ul class="h-100 col-lg-3 col-md-4 col-sm-8 offset-lg-0 offset-sm-2 d-flex flex-column justify-content-center bg-transparent mb-0 p-1px">
+          <h3 class="fs-6 text-light fw-bolder my-3">Shop with Us</h3>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Your Account</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Your Orders</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Your Addresses</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Your Lists</a> 
+        </ul>
+
+        <ul class="h-100 col-lg-3 col-md-4 col-sm-8 offset-lg-0 offset-md-2 offset-sm-2 d-flex flex-column justify-content-center bg-transparent mb-0 p-1px">
+          <h3 class="fs-6 text-light fw-bolder my-3">Make Money with Us</h3>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Protect and build your brand</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Advertise Your Products</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Sell on Amazon</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Fulfillment by Amazon</a>
+        </ul>
+
+        <ul class="h-100 col-lg-3 col-md-4 col-sm-8 offset-lg-0 offset-sm-2 d-flex flex-column justify-content-center bg-transparent mb-0 p-1px">
+          <h3 class="fs-6 text-light fw-bolder my-3">Let Us Help You</h3>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Help</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Shipping & Delivery</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Returns & Replacements</a>
+          <a href="#" class="text-sec-enhasis  mb-2 link-nav-style fs-8 fw-bold link-sec-hover">Amazon App Download</a>
+        </ul>
+      </div>
+
+      <!-- horizontal line -->
+      <div>
+        <hr class="ln-brd">
+      </div>
+
+      <!-- part that have language selection and amazon logo -->
+      <div class="row w-7 m-auto py-3">
+        <div class="d-flex justify-content-center w-5 m-auto">
+          <!-- amazon logo image -->
+          <img src="./images/logoo-2.jpg" alt="" style="background-color: transparent;" class="me-2" width="100px">
+          <!-- choose language arabic or english -->
+          <button type="button" class="btn text-sec-enhasis border border-secondary align-self-center ms-4 fs-8 list-lang-footer">
+            <i class="fa-solid fa-globe pe-1"></i>
+            English
+            <i class="fa-solid fa-repeat ps-1"></i>
+
+            <!-- list to choose the language appear when hover on btn -->
+            <ul class="position-absolute all-cat p-3 ul-lang-footer disp-none">
+              <div class="position-relative">
+                <div class="triangle-up position-absolute"></div>
+              </div>
+              <li class="text-start text-dark my-2">
+                <input type="radio" name="language" value="arabic"> <label for="arabic" class="pe-5">العربية - AR</label>
+              </li>
+              <hr>
+              <li class="text-start text-dark my-2">
+                <input type="radio" name="language" value="English"> <label for="English" class="pe-5">english - EN</label>
+              </li>
+              <li class="text-start all-cat my-2">
+                <a href="#">Learn more</a>
+              </li>
+              <hr>
+              <div class="text-start text-dark pe-5">
+                <img src="./images/egy-flag.png" width="20px" alt="">
+                <span>You are shopping on <br> Amazon.eg</span>
+              </div>
+              <div>
+                <a href="#" class="pt-2 text-center d-block w-100">Change Country/Region</a>
+              </div>
+            </ul>
+          </button>
+          <!-- button to choose the country and contain the flags -->
+          <button type="button" class="btn text-sec-enhasis border border-secondary align-self-center ms-4 fs-8">
+            <img src="./images/egy-flag.png" width="20px" alt="" class="me-1">
+            Eygpt
+          </button>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- hidden open on medium and small screen -->
+    <div class="w-100 bg-rd-nav p-2 d-block d-lg-none">
+      <div class="w-100 m-auto p-5 px-3 d-block d-lg-none">
+        <div class="row">
+          <!-- 1 -->
+          <ul class="col-6 d-flex flex-column  justify-content-start bg-transparent">
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Your Account</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Your Address</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">P's amazon.eg</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">sell</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Help</a>
+          </ul>
+          <!-- 2 -->
+          <ul class="col-6 d-flex flex-column  justify-content-start bg-transparent">
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Your Orders</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Your Lists</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Browser History</a>
+            <a href="#" class="text-white link-nav-style fs-7 pb-1 link-sec-hover">Returns</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- last part on footer which contain the copy right -->
+    <div class="w-100 bg-ft">
+      <!-- part that have language selection and amazon logo -->
+      <div class="row w-7 m-auto py-3 d-block d-lg-none">
+        <div class="d-flex justify-content-center w-5 m-auto">
+          <!-- choose language arabic or english -->
+          <button type="button" class="btn text-sec-enhasis border border-secondary align-self-center ms-4 fs-8 list-lang-footer">
+            <i class="fa-solid fa-globe pe-1"></i>
+            English
+            <i class="fa-solid fa-repeat ps-1"></i>
+
+            <!-- list to choose the language appear when hover on btn -->
+            <ul class="position-absolute all-cat p-3 ul-lang-footer disp-none">
+              <div class="position-relative">
+                <div class="triangle-up position-absolute"></div>
+              </div>
+              <li class="text-start text-dark my-2">
+                <input type="radio" name="language" value="arabic"> <label for="arabic" class="pe-5">العربية - AR</label>
+              </li>
+              <hr>
+              <li class="text-start text-dark my-2">
+                <input type="radio" name="language" value="English"> <label for="English" class="pe-5">english - EN</label>
+              </li>
+              <li class="text-start all-cat my-2">
+                <a href="#">Learn more</a>
+              </li>
+              <hr>
+              <div class="text-start text-dark pe-5">
+                <img src="./images/egy-flag.png" width="20px" alt="">
+                <span>You are shopping on <br> Amazon.eg</span>
+              </div>
+              <div>
+                <a href="#" class="pt-2 text-center d-block w-100">Change Country/Region</a>
+              </div>
+            </ul>
+          </button>
+          <!-- button to choose the country and contain the flags -->
+          <button type="button" class="btn text-sec-enhasis border border-secondary align-self-center ms-4 fs-8">
+            <img src="./images/egy-flag.png" width="20px" alt="" class="me-1">
+            Eygpt
+          </button>
+        </div>
+        <a href="./logIn.html" class="d-block text-white fs-7 fw-bold w-100 text-center mt-3" style="text-decoration: none;">Switch account</a>
+        <a href="./logIn.html" class="d-block text-white fs-7 fw-bold w-100 text-center mt-3" style="text-decoration: none;">Sign Out</a>
+      </div>
+      <div class="w-75 m-auto pt-5  d-none d-lg-block">
+        <div class="row">
+          <!-- 1 -->
+          <ul class="h-100 col-2 offset-1 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Amazon Advertising</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Find, attract, and <br>engage customers</a>
+          </ul>
+          <!-- 2 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Sell on Amazon.ae</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Sell globally, start with UAE	</a>
+          </ul>
+
+          <!-- 2 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Book Depository</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Books With Free <br>Delivery Worldwide</a>
+          </ul>
+
+          <!-- 3 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Sell on Amazon.sa</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Sell globally, start with Saudi Arabia	</a>
+          </ul>
+
+          <!-- 4 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Goodreads</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Book reviews <br>& recommendations</a>
+          </ul>
+
+          <!-- 5 -->
+          <ul class="h-100 col-2 offset-1 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Audible</h3>	
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Download <br> Audio Books</a>
+          </ul>
+
+          <!-- 6 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Alexa</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Actionable Analytics <br>for the Web</a>
+          </ul>
+          <!-- 3 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Sell on Amazon.sa</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Sell globally, start with Saudi Arabia	</a>
+          </ul>
+
+          <!-- 7 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Book Depository</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Books With Free <br>Delivery Worldwide</a>
+          </ul>
+
+          <!-- 8 -->
+          <ul class="h-100 col-2 d-flex flex-column  justify-content-center bg-transparent mb-5 p-1px">
+            <h3 class="fs-9 text-sec-enhasis fw-bolder my-0">Shopbop</h3>
+            <a href="#" class="text-secondary link-nav-style fs-10 fw-bold link-sec-hover">Designer <br>Fashion Brands</a>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="w-100 text-center">
+          <ul class="d-flex justify-content-center bg-transparent m-0">
+            <a href="#" class="text-sec-enhasis link-nav-style fs-8 me-3 fw-bold link-sec-hover">Conditions of Use & Sale</a>
+            <a href="#" class="text-sec-enhasis link-nav-style fs-8 me-3 fw-bold link-sec-hover">Privacy Notice</a>
+            <a href="#" class="text-sec-enhasis link-nav-style fs-8 fw-bold link-sec-hover">Interest-Based Ads</a>
+          </ul>
+        </div>
+        <div class="pb-5">
+          <p class="fs-7 text-sec-enhasis m-0 text-center">
+            &copy;1996-2023, Amazon.com, Inc. or its affiliates
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+  <script src="./js/jquery-3.1.1.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
