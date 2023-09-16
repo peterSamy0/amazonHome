@@ -5,7 +5,7 @@ $(document).ready(function(){
   $(".sign-out").each(function(){
     $(this).on("click", ()=>{
       localStorage.setItem("userName", "")
-      window.open('../login.html', '_self');
+      window.open('../logIn.html', '_self');
     })
   })
   $(".accountName").each(function(){
